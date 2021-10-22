@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&family=Share+Tech+Mono&display=swap");
+
+:root {
+  --bg-color: rgb(10, 10, 10);
+  --text-color: rgb(143, 143, 143);
+  --accent-color: rgb(47, 250, 28);
+  /* Shadows */
+  --outer-shadow-lg: 6px 6px 12px rgba(0, 0, 0, 1),
+    -6px -6px 12px rgba(255, 255, 255, 0.1);
+  --outer-shadow-sm: 3px 3px 6px rgba(0, 0, 0, 1),
+    -3px -3px 6px rgba(255, 255, 255, 0.1);
+  --inner-shadow-sm: inset 3px 3px 6px rgba(0, 0, 0, 1),
+    inset -3px -3px 6px rgba(255, 255, 255, 0.1);
+}
+
+* {
+  font-family: "Share Tech Mono", monospace;
+}
+
+body {
+  background-color: var(--bg-color);
+
+  margin-left: 33em;
+  margin-right: 33em;
+}
+
+.banner .banner-img {
+  width: 100%;
+}
+
+.banner .profile-img {
+  width: 7rem;
+  height: auto;
+  border: 3px solid #ffffff34;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  padding: 0.5rem;
+  background-color: #1d1c1c;
+}
+
+.footer-section {
+  padding: 2rem;
+  color: #fff;
+  margin-top: 3.8rem;
+}
+
+.profile {
+  text-align: center;
+  border-top: 3px solid #ffffff34;
+  border-radius: 15px 15px 0 0;
+}
+
+.profile .username {
+  color: #fff;
+  font-weight: 600;
+  margin-top: -2.5rem;
+}
+
+.social-links-wrapper {
+  text-align: center;
+  margin: 2rem;
+}
+
+.social-links-container {
+  height: 3.8rem;
+  margin-top: 1.5rem;
+  padding: 1rem;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: var(--outer-shadow-lg);
+  transition: box-shadow 700ms ease, color 700ms ease;
+}
+
+.social-links-container:hover {
+  text-decoration: none;
+  color: white;
+  transition: 0.5s;
+  transform: translateY(-3px);
+
+  box-shadow: var(--outer-shadow-sm), var(--inner-shadow-sm);
+}
+
+.link {
+  color: #ffffff;
+}
+
+.link:hover {
+  text-decoration: none !important;
+  color: white;
+  font-weight: 600 !important;
+}
+
+.bg-music {
+  position: fixed;
+  bottom: 56px;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  color: #fff;
+  border-radius: 50%;
+}
+
+.bg-music .sound {
+  filter: invert(1);
+}
+
+@media only screen and (min-device-width: 400px) and (max-device-width: 828px) {
+  body {
+    background-color: var(--bg-color);
+
+    margin-left: unset;
+    margin-right: unset;
+  }
+}
+
+/** GALAXY S5 **/
+@media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+  body {
+    background-color: var(--bg-color);
+
+    margin-left: unset;
+    margin-right: unset;
+  }
+}
