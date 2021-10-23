@@ -1,5 +1,5 @@
 var typed = new Typed(".type", {
-  strings: ["page.", "world."],
+  strings: ["page_", "world_"],
   typeSpeed: 80,
   backSpeed: 80,
   loop: true,

@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&family=Share+Tech+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&family=Orbitron:wght@400;500;600&family=Share+Tech+Mono&display=swap");
 
 :root {
-  --bg-color: rgb(10, 10, 10);
+  --bg-color: rgba(10, 10, 10, 0.932);
   --text-color: rgb(143, 143, 143);
   --accent-color: rgb(47, 250, 28);
   /* Shadows */
@@ -33,7 +33,8 @@ body {
 .banner .profile-img {
   width: 7rem;
   height: auto;
-  border: 3px solid #ffffff34;
+  /* border: 3px solid #ffffff34; */
+  border: 3px solid #fefa0079;
   border-radius: 50%;
   transform: translateY(-50%);
   padding: 0.5rem;
@@ -42,20 +43,24 @@ body {
 
 .footer-section {
   padding: 2rem;
-  color: #fff;
   margin-top: 3.8rem;
+  color: #fff;
 }
 
 .profile {
   text-align: center;
-  border-top: 3px solid #ffffff34;
+  /* border-top: 3px solid #ffffff34; */
+  border-top: 3px solid #fefa0079;
   border-radius: 15px 15px 0 0;
 }
 
-.profile .username {
+.profile .username,
+.profile .username span {
   color: #fff;
   font-weight: 600;
   margin-top: -2.5rem;
+  font-family: "Orbitron", sans-serif !important;
+  letter-spacing: 2px;
 }
 
 .social-links-wrapper {
@@ -65,14 +70,16 @@ body {
 
 .social-links-container {
   height: 3.8rem;
-  margin-top: 1.5rem;
+  margin-top: 1.7rem;
   padding: 1rem;
   color: white;
   border-radius: 5px;
   text-align: center;
   text-decoration: none;
+  /* box-shadow: var(--outer-shadow-sm), var(--inner-shadow-sm); */
   box-shadow: var(--outer-shadow-lg);
   transition: box-shadow 700ms ease, color 700ms ease;
+  border-left: 3px solid #fefa0079;
 }
 
 .social-links-container:hover {
